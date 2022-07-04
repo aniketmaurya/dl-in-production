@@ -2,7 +2,7 @@ FROM python:3.9
 
 # copy fastapi app
 COPY requirements.txt requirements.txt
-COPY app.py app.py 
+COPY app.py app.py
 
 # Install dependencies
 RUN pip install -U torch "fastapi[standard]"
